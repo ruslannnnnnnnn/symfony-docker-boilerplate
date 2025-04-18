@@ -41,3 +41,5 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
 
 RUN pecl install xdebug \
     && docker-php-ext-enable xdebug
+
+CMD ["/var/www/symfony/docker/php/entrypoint.sh"]
